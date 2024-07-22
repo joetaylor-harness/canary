@@ -1,15 +1,16 @@
 /// <reference types="vite-plugin-svgr/client" />
 import { Meta, Story } from '@storybook/react'
-import Drawer from '@/components/layout/Drawer'
+import Topbar from '@/components/layout/TopBar'
+import Content from '@/components/layout/Content'
 
 export default {
-  title: 'Components/Drawer',
-  component: Drawer.Root,
+  title: 'Components/Content',
+  component: Content.Root,
   parameters: {
     layout: 'fullscreen',
     docs: {
       description: {
-        component: `Displays a top bar component inside a container, docked to top of screen`
+        component: `Displays a content component inside a container.`
       }
     }
   },
@@ -17,19 +18,19 @@ export default {
 } as Meta
 
 const Template: Story = () => (
-  <Drawer.Root>
-    <p>Drawer</p>
-  </Drawer.Root>
+  <Content.Root>
+    <p>Content</p>
+  </Content.Root>
 )
 
 const GitnessTemplate: Story = () => (
-  <Drawer.Root>
-    <p>Drawer</p>
-  </Drawer.Root>
+  <Content.Root>
+    <p>Content</p>
+  </Content.Root>
 )
 
 export const Default = Template.bind({})
 Default.args = {}
 
-export const GitnessDrawer = GitnessTemplate.bind({})
+export const GitnessContent = GitnessTemplate.bind({})
 GitnessTemplate.args = {}

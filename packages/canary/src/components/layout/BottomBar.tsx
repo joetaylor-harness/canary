@@ -1,9 +1,17 @@
-import { ReactNode } from 'react'
+import React from 'react'
 
-interface bottomBarProps {
-  children: ReactNode
+const BottomBar = {
+  Root: function Root({ children }: { children: React.ReactNode }) {
+    return <div className="w-full grid grid-cols-[1fr_auto] px-5 gap-6 border-b h-[38px] items-center">{children}</div>
+  },
+
+  Left: React.memo(function Header({ children }: { children: React.ReactNode }) {
+    return <div className="flex order-1 gap-3">{children}</div>
+  }),
+
+  Right: React.memo(function Header({ children }: { children: React.ReactNode }) {
+    return <div className="flex order-2 gap-3">{children}</div>
+  })
 }
 
-export default function BottomBar({ children }: bottomBarProps) {
-  return <div className="fixed z-10 bottom-0 left-0 right-0 py-8 flex justify-center bg-background">{children}</div>
-}
+export default BottomBar

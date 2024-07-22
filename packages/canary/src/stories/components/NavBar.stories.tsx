@@ -127,7 +127,7 @@ const GitnessTemplate: Story = () => (
   </Navbar.Root>
 )
 
-export const Gitness = GitnessTemplate.bind({})
+export const GitnessNavbar = GitnessTemplate.bind({})
 GitnessTemplate.args = {}
 
 export const Default = Template.bind({})

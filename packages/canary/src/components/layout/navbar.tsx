@@ -12,7 +12,7 @@ const Navbar = {
   },
 
   Header: React.memo(function Header({ children }: { children: React.ReactNode }) {
-    return <div className="p-5 grid">{children}</div>
+    return <div className="px-5 h-[57px] items-center grid">{children}</div>
   }),
 
   Content: function Content({ children }: { children: React.ReactNode }) {
@@ -77,7 +77,7 @@ const Navbar = {
   ),
 
   Footer: React.memo(function Footer({ children }: { children: React.ReactNode }) {
-    return <div className="grid border-t">{children}</div>
+    return <div className="grid px-5 h-[76px] items-center border-t">{children}</div>
   })
 }
 
