@@ -26,7 +26,7 @@ const preview = {
         light: '',
         dark: 'dark'
       },
-      defaultTheme: 'dark'
+      defaultTheme: 'dark' // Force Storybook to use dark mode by default for the app
     })
   ]
 }
