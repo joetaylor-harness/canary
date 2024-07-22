@@ -5,7 +5,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '..
 const Navbar = {
   Root: function Root({ children }: { children: React.ReactNode }) {
     return (
-      <div className="select-none grid grid-rows-[auto_1fr_auto] w-[220px] h-screen overflow-y-auto border-r bg-background text-sm text-[#AEAEB7]">
+      <div className="select-none grid grid-rows-[auto_1fr_auto] w-[220px] h-screen overflow-y-auto border-r text-sm text-[#AEAEB7] bg-[#070709]">
         {children}
       </div>
     )

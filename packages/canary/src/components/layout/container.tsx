@@ -2,7 +2,7 @@ import React from 'react'
 
 const Container = {
   Root: function Root({ children }: { children: React.ReactNode }) {
-    return <div className="grid grid-cols-[auto_1fr] w-screen h-screen bg-black">{children}</div>
+    return <div className="grid grid-cols-[auto_1fr] w-screen h-screen bg-[#0F0F11]">{children}</div>
   },
 
   Sidebar: React.memo(function Header({ children }: { children: React.ReactNode }) {
