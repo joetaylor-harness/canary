@@ -1,4 +1,4 @@
-import Drawer from '../../components/layout/drawer'
+import Drawer from '@/components/layout/drawer'
 import { Meta, StoryObj } from '@storybook/react'
 
 const meta: Meta = {
