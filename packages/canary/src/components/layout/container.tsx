@@ -2,7 +2,7 @@ import React from 'react'
 
 const Container = {
   Root: function Root({ children }: { children: React.ReactNode }) {
-    return <div className="grid grid-cols-[auto_1fr] h-screen bg-black">{children}</div>
+    return <div className="grid grid-cols-[auto_1fr] w-screen h-screen bg-black">{children}</div>
   },
 
   Sidebar: React.memo(function Header({ children }: { children: React.ReactNode }) {
@@ -10,7 +10,7 @@ const Container = {
   }),
 
   Main: function Content({ children }: { children: React.ReactNode }) {
-    return <div className="grid grid-rows-[auto_1fr_auto] h-screen">{children}</div>
+    return <div className="grid grid-rows-[auto_1fr_auto] col-start-2 w-full h-full">{children}</div>
   },
 
   Topbar: function Content({ children }: { children: React.ReactNode }) {
@@ -18,10 +18,16 @@ const Container = {
   },
 
   Content: function Content({ children }: { children: React.ReactNode }) {
-    return <div className="flex overflow-y-auto">{children}</div>
+    return <div className="flex w-full h-full overflow-y-auto">{children}</div>
   },
 
-  Footer: function Content({ children }: { children: React.ReactNode }) {
+  CenteredContent: function CenteredContent({ children }: { children: React.ReactNode }) {
+    return (
+      <div className="flex row-start-2 place-content-center items-center w-full h-full overflow-y-auto">{children}</div>
+    )
+  },
+
+  Bottombar: function Content({ children }: { children: React.ReactNode }) {
     return <div className="flex border-t">{children}</div>
   }
 }

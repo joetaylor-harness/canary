@@ -3,7 +3,7 @@ import { Meta, Story } from '@storybook/react'
 import BottomBar from '@/components/layout/BottomBar'
 
 export default {
-  title: 'Components/Bottom bar',
+  title: 'Components/Bottom Bar',
   component: BottomBar.Root,
   parameters: {
     layout: 'fullscreen',
@@ -30,7 +30,7 @@ const Template: Story = () => (
 const GitnessTemplate: Story = () => (
   <BottomBar.Root>
     <BottomBar.Left>
-      <p className="text-xs font-light text-primary">Name</p>
+      <p className="text-xs font-light text-primary">Left</p>
     </BottomBar.Left>
     <BottomBar.Right>
       <p className="text-xs font-light text-primary">Right</p>

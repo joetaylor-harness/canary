@@ -3,7 +3,7 @@ import React from 'react'
 const Topbar = {
   Root: function Root({ children }: { children: React.ReactNode }) {
     return (
-      <div className="w-full grid grid-cols-[1fr_auto] px-5 h-14 gap-6 border-b items-center text-sm font-medium">
+      <div className="w-full grid grid-cols-[1fr_auto] px-5 h-14 gap-6 border-b items-center text-sm font-regular">
         {children}
       </div>
     )

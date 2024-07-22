@@ -32,9 +32,9 @@ const Template: Story = () => (
       <Container.Content>
         <GitnessContent />
       </Container.Content>
-      <Container.Footer>
+      <Container.Bottombar>
         <GitnessBottomBar />
-      </Container.Footer>
+      </Container.Bottombar>
     </Container.Main>
   </Container.Root>
 )
@@ -48,9 +48,9 @@ const NoSidebarTemplate: Story = () => (
       <Container.Content>
         <GitnessContent />
       </Container.Content>
-      <Container.Footer>
+      <Container.Bottombar>
         <GitnessBottomBar />
-      </Container.Footer>
+      </Container.Bottombar>
     </Container.Main>
   </Container.Root>
 )
@@ -59,8 +59,18 @@ const ContentOnlyTemplate: Story = () => (
   <Container.Root>
     <Container.Main>
       <Container.Content>
-        <GitnessContent />
+        <p>Content only</p>
       </Container.Content>
+    </Container.Main>
+  </Container.Root>
+)
+
+const CenteredContentOnlyTemplate: Story = () => (
+  <Container.Root>
+    <Container.Main>
+      <Container.CenteredContent>
+        <p>Centered content only</p>
+      </Container.CenteredContent>
     </Container.Main>
   </Container.Root>
 )
@@ -72,4 +82,7 @@ export const NoSidebar = NoSidebarTemplate.bind({})
 NoSidebarTemplate.args = {}
 
 export const ContentOnly = ContentOnlyTemplate.bind({})
+ContentOnlyTemplate.args = {}
+
+export const CenteredContentOnly = CenteredContentOnlyTemplate.bind({})
 ContentOnlyTemplate.args = {}
