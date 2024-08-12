@@ -6,8 +6,9 @@ import { cn } from '../lib/utils'
 const tabsListVariants = cva('inline-flex items-center text-muted-foreground', {
   variants: {
     variant: {
-      default: 'h-9 rounded-lg bg-muted p-1',
-      underline: 'gap-6 border-b w-full justify-start h-[56px]'
+      default: 'h-9 rounded-lg bg-muted p-1 justify-center',
+      underline: 'h-11 gap-4 justify-center',
+      navigation: 'h-[56px] border-b gap-6 justify-start w-full'
     }
   },
   defaultVariants: {
@@ -23,7 +24,9 @@ const tabsTriggerVariants = cva(
         default:
           'rounded-md data-[state=active]:bg-background data-[state=active]:shadow data-[state=active]:text-foreground',
         underline:
-          'font-normal px-1.5 h-[56px] border-b border-b-transparent border-solid m-0 data-[state=active]:text-primary data-[state=active]:border-shade-60'
+          'px-0 font-normal h-11 border-b-2 border-b-transparent border-solid m-0 data-[state=active]:text-primary data-[state=active]:border-primary',
+        navigation:
+          'px-1.5 font-normal h-[56px] border-b border-b-transparent border-solid m-0 data-[state=active]:text-primary data-[state=active]:border-shade-60'
       }
     },
     defaultVariants: {
@@ -38,7 +41,8 @@ const tabsContentVariants = cva(
     variants: {
       variant: {
         default: '',
-        underline: ''
+        underline: '',
+        navigation: ''
       }
     },
     defaultVariants: {
